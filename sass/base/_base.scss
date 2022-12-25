@@ -2,6 +2,7 @@ body {
   font-family: "Roboto", "Raleway", sans-serif;
   background-color: #ffffff;
   color: var(--primary-color);
+  overflow: visible;
 }
 
 h1,
@@ -30,9 +31,12 @@ ul {
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .section {
