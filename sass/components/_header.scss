@@ -17,21 +17,24 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+  }
 }
 
 .header__logo {
   font-family: "Raleway", "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
+  font-size: 24px;
+  line-height: calc(28 / 24);
   letter-spacing: 0.03em;
   color: #000000;
-
-  @media screen and (max-width: 767px) {
-    padding: 6px 0;
-  }
   
   @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    
     margin-right: 93px;
   }
 }
@@ -52,5 +55,17 @@
   margin: 0;
   padding: 0;
   border: none;
+  outline: none;
+  background: none;
   cursor: pointer;
+}
+
+.header__menu-icon {
+  display: block;
+}
+
+.header__is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }

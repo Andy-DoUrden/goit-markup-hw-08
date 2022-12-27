@@ -25,7 +25,7 @@
       <div class="container">
         <a href="./index.html" class="header__logo link"><span>Web</span>Studio</a>
 
-        <div class="header__nav-thumb">
+        <div class="header__nav-thumb header__is-hidden">
           <nav class="header-nav">
             <ul class="header-nav__list list">
               <li><a href="./index.html" class="header-nav__link link current">Студія</a></li>
@@ -54,10 +54,10 @@
           </ul>
         </div>
 
-        <button type="header__menu-button">
+        <button type="button" class="header__menu-button btn">
           <svg class="header__menu-icon" width="40" height="40">
             <use href="./images/icons.svg#menu"></use>
-            <use href="./images/icons.svg#menu-close"></use>
+            <use class="header__is-hidden" href="./images/icons.svg#menu-close"></use>
           </svg>
         </button>
       </div>
@@ -327,42 +327,42 @@
           <ul class="client__list list">
             <li class="client__item">
               <a href="#" class="client__link link">
-                <svg class="client__icon" width="41" height="46.7">
+                <svg class="client__icon" width="106" height="60">
                   <use href="./images/icons.svg#client-1"></use>
                 </svg>
               </a>
             </li>
             <li class="client__item">
               <a href="#" class="client__link link">
-                <svg class="client__icon" width="40" height="52">
+                <svg class="client__icon" width="106" height="60">
                   <use href="./images/icons.svg#client-2"></use>
                 </svg>
               </a>
             </li>
             <li class="client__item">
               <a href="#" class="client__link link">
-                <svg class="client__icon" width="43.46" height="41.18">
+                <svg class="client__icon" width="106" height="60">
                   <use href="./images/icons.svg#client-3"></use>
                 </svg>
               </a>
             </li>
             <li class="client__item">
               <a href="#" class="client__link link">
-                <svg class="client__icon" width="84.44" height="40.62">
+                <svg class="client__icon" width="106" height="60">
                   <use href="./images/icons.svg#client-4"></use>
                 </svg>
               </a>
             </li>
             <li class="client__item">
               <a href="#" class="client__link link">
-                <svg class="client__icon" width="62.54" height="45.43">
+                <svg class="client__icon" width="106" height="60">
                   <use href="./images/icons.svg#client-5"></use>
                 </svg>
               </a>
             </li>
             <li class="client__item">
               <a href="#" class="client__link link">
-                <svg class="client__icon" width="93.79" height="43.93">
+                <svg class="client__icon" width="106" height="60">
                   <use href="./images/icons.svg#client-6"></use>
                 </svg>
               </a>
@@ -490,7 +490,7 @@
           </label>
 
           <label class="modal__form-checkbox-field">
-            <input class="modal__form-checkbox" type="checkbox" name="policy" />
+            <input class="modal__form-checkbox" type="checkbox" name="policy" required />
             <span class="modal__form-checkbox-icon-span">
               <svg class="modal__form-checkbox-icon" width="16" height="15">
                 <use href="./images/icons.svg#confirm"></use>
