@@ -3,26 +3,52 @@
   padding: 60px 0;
   max-height: 603px;
 
-  @media screen and (min-width: 1200px) {
-    max-height: 252px;
+  @media screen and (min-width: $tablet) {
+    min-height: 463px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    min-height: 252px;
+  }
+}
+
+.footer .container {
+  @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+    padding: 0 76px 0 89px;
   }
 }
 
 .footer__section {
   display: flex;
+  flex-wrap: wrap;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $pre-tablet) {
     flex-direction: column;
   }
 }
 
 .footer__address {
-  @media screen and (max-width: 767px) {
+  height: 127px;
+
+  @media screen and (max-width: $pre-tablet) {
     width: 100%;
+    margin: 0 auto 60px auto;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 165px;
+  }
+
+  @media screen and (max-width: $pre-desktop) {
+    width: 232px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
     margin-bottom: 60px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
+    min-height: 132px;
     margin-right: 70px;
   }
 }
@@ -34,14 +60,15 @@
   line-height: calc(28 / 24);
   letter-spacing: 0.03em;
   color: #ffffff;
-  margin-bottom: 20px;
 
-  @media screen and (max-width: 767px) {
+  // margin-bottom: 20px;
+
+  @media screen and (max-width: $pre-desktop) {
     display: block;
     text-align: center;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 26px;
     line-height: calc(31 / 26);
   }
@@ -52,11 +79,12 @@
 }
 
 .footer__address-list {
+  margin-top: 20px;
   width: 231px;
   min-height: 81px;
   display: block;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $pre-desktop) {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -81,7 +109,7 @@
     margin-bottom: 8px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     &:not(:last-child) {
       margin-bottom: 9px;
     }
@@ -101,14 +129,18 @@
   width: 206px;
   min-height: 80px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $pre-tablet) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto 60px auto;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $tablet) {
+    padding-top: 5px;
+  }
+
+  @media screen and (min-width: $desktop) {
     padding: 12px 0 40px 0;
     margin-right: auto;
   }
@@ -164,12 +196,12 @@
   width: 100%;
   min-height: 156px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $pre-desktop) {
     flex-direction: column;
     align-items: center;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: 570px;
     height: 86px;
     padding: 12px 0 58px 0;
@@ -177,11 +209,11 @@
 }
 
 .footer__form-field {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $pre-desktop) {
     width: 100%;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-right: 12px;
   }
 }
@@ -198,7 +230,7 @@
   color: $secondary-color;
   margin-bottom: 20px;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $pre-desktop) {
     text-align: center;
   }
 }
@@ -225,8 +257,13 @@
     color: rgba(255, 255, 255, 0.6);
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $pre-tablet) {
     width: 100%;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+    width: 450px;
+    margin: 0 auto;
   }
 }
 

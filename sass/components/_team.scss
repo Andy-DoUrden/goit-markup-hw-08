@@ -10,7 +10,7 @@
   color: $primary-color;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 36px;
     line-height: calc(42 / 36);
     margin-bottom: 50px;
@@ -18,10 +18,15 @@
 }
 
 .team__list {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
     width: 1170px;
     min-height: 368px;
-    display: flex;
   }
 }
 
@@ -32,20 +37,24 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 24px;
+  
+  @media screen and (max-width: $pre-tablet) {
+    margin: 0 auto;
 
-  @media screen and (min-width: 1200px) {
-    width: 270px;
-    min-height: 368px;
-    padding-bottom: 30px;
-
-    &:nth-child(-n + 3) {
-      margin-right: 30px;
+    &:not(:last-child) {
+    margin-bottom: 30px;
     }
   }
 
-  @media screen and (max-width: 1199px) {
-    margin: 0 auto;
-    margin-bottom: 30px;
+  @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+    width: 354px;
+    height: 536px;
+  }
+  
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+    min-height: 368px;
+    padding-bottom: 30px;
   }
 }
 
@@ -56,6 +65,15 @@
   max-width: 450px;
   height: 100%;
   max-height: 460px;
+
+  @media screen and (min-width: $tablet) {
+    height: 374px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+    height: 260px;
+  }
 }
 
 .team__desc {
@@ -86,7 +104,7 @@
   margin: 0 auto;
   display: flex;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     padding: 0 32px;
     margin: 0;
   }

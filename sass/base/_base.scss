@@ -34,19 +34,24 @@ ul {
   margin: 0 auto;
   padding: 0 15px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $pre-tablet) {
     max-width: 480px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: $desktop) {
     width: 1200px;
   }
 }
 
 .section {
   padding: 60px 0;
+  z-index: 1;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     padding: 94px 0;
   }
 }

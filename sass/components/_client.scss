@@ -6,7 +6,7 @@
   color: $primary-color;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 1200) {
+  @media screen and (min-width: $desktop) {
     font-size: 36px;
     line-height: calc(42 / 36);
 
@@ -21,7 +21,7 @@
   row-gap: 30px;
   column-gap: 30px;
 
-  @media screen and (min-width: 1200) {
+  @media screen and (min-width: $desktop) {
     width: 1170px;
     min-height: 92px;
   }
@@ -40,13 +40,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms;
 
-  // @media screen and (max-width: 479px) {
-  //   &:not(:last-child) {
-  //     margin-bottom: 30px;
-  //   }
-  // }
-
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: 170px;
     height: 92px;
   }

@@ -1,5 +1,14 @@
 .benefits__list {
-  @media screen and (min-width: 1200px) {
+  gap: 30px;
+
+  @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+    width: 738px;
+    height: 480px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $desktop) {
     width: 1170px;
     display: flex;
   }
@@ -10,19 +19,20 @@
   min-height: 76px;
   margin: 0 auto;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $pre-tablet) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+    max-width: 354px;
+    min-height: 224px;
+  }
+
+  @media screen and (min-width: $desktop) {
     width: 270px;
     min-height: 98px;
-
-    &:nth-child(-n + 3) {
-      margin-right: 30px;
-    }
   }
 }
 
@@ -35,7 +45,7 @@
   margin-bottom: 30px;
   background-color: #f5f4fa;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: 270px;
     min-height: 120px;
   }
@@ -49,7 +59,7 @@
   color: $primary-color;
   margin-bottom: 10px;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $pre-tablet) {
     text-align: center;
   }
 }
@@ -60,7 +70,9 @@
   letter-spacing: 0.03em;
   color: $tertiary-color;
 
-  padding: 1px 0;
+  @media screen and (max-width: $pre-desktop) {
+    padding: 1px 0;
+  }
 }
 
 .benefits__icon {
