@@ -141,7 +141,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    padding: 12px 0 40px 0;
+    padding: 12px 0 14px 0;
     margin-right: auto;
   }
 }
@@ -194,7 +194,7 @@
 .footer__form {
   display: flex;
   width: 100%;
-  min-height: 156px;
+  height: 156px;
 
   @media screen and (max-width: $pre-desktop) {
     flex-direction: column;
@@ -203,8 +203,8 @@
 
   @media screen and (min-width: $desktop) {
     width: 570px;
-    height: 86px;
-    padding: 12px 0 58px 0;
+    height: 98px;
+    padding: 12px 0 0 0;
   }
 }
 

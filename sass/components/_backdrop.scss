@@ -1,5 +1,5 @@
 .backdrop {
-  z-index: 1;
+  z-index: 4;
   position: fixed;
   top: 0;
   left: 0;
@@ -41,11 +41,11 @@
   padding: 40px;
   overflow-y: auto;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: $mobile) {
     width: 450px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: 528px;
     min-height: 581px;
   }
@@ -91,7 +91,7 @@
   color: $primary-color;
   margin-bottom: 12px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     line-height: calc(23 / 20);
   }
 }
@@ -181,7 +181,7 @@
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     line-height: calc(14 / 12);
   }
 }
@@ -230,7 +230,7 @@
   color: $tertiary-color;
   user-select: none;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: calc(24 / 14);
   }

@@ -25,39 +25,56 @@
       <div class="container">
         <a href="./index.html" class="header__logo link"><span>Web</span>Studio</a>
 
-        <div class="header__nav-thumb header__is-hidden">
-          <nav class="header-nav">
-            <ul class="header-nav__list list">
-              <li><a href="./index.html" class="header-nav__link link current">Студія</a></li>
-              <li><a href="./portfolio.html" class="header-nav__link link">Портфоліо</a></li>
-              <li><a href="#" class="header-nav__link link">Контакти</a></li>
-            </ul>
-          </nav>
+        <div class="header__nav-thumb is-closed" data-menu>
+          <div class="header__nav-container">
+            <nav class="header-nav">
+              <ul class="header-nav__list list">
+                <li class="header-nav__item"><a href="./index.html" class="header-nav__link link current">Студія</a></li>
+                <li class="header-nav__item"><a href="./portfolio.html" class="header-nav__link link">Портфоліо</a></li>
+                <li class="header-nav__item"><a href="#" class="header-nav__link link">Контакти</a></li>
+              </ul>
+            </nav>
 
-          <ul class="header-address list">
-            <li>
-              <a href="mailto:info@devstudio.com" class="header-address__link link">
-                <svg class="header-address__icon" width="16" height="16">
-                  <use href="./images/icons.svg#konvert"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li>
-              <a href="tel:+380961111111" class="header-address__link link">
-                <svg class="header-address__icon" width="10" height="16">
-                  <use href="./images/icons.svg#smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
+            <ul class="header-address__list list">
+              <li class="header-address__item">
+                <a href="mailto:info@devstudio.com" class="header-address__link link">
+                  <svg class="header-address__icon" width="16" height="16">
+                    <use href="./images/icons.svg#konvert"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="header-address__item">
+                <a href="tel:+380961111111" class="header-address__link link">
+                  <svg class="header-address__icon" width="10" height="16">
+                    <use href="./images/icons.svg#smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+
+            <ul class="header-social__list list">
+              <li class="header-social__item">
+                <a href="#" class="header-social__link link"> Instagram </a>
+              </li>
+              <li class="header-social__item">
+                <a href="#" class="header-social__link link"> Twitter </a>
+              </li>
+              <li class="header-social__item">
+                <a href="#" class="header-social__link link"> Facebook </a>
+              </li>
+              <li class="header-social__item">
+                <a href="#" class="header-social__link link"> LinkedIn </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <button type="button" class="header__menu-button btn">
-          <svg class="header__menu-icon" width="40" height="40">
-            <use href="./images/icons.svg#menu"></use>
-            <use class="header__is-hidden" href="./images/icons.svg#menu-close"></use>
+        <button type="button" class="header__menu-button btn" aria-expanded="false" data-menu-button>
+          <svg class="header__menu-icon" width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use class="header__menu-open" href="./images/icons.svg#menu"></use>
+            <use class="header__menu-close" href="./images/icons.svg#menu-close"></use>
           </svg>
         </button>
       </div>
@@ -506,6 +523,8 @@
         </form>
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

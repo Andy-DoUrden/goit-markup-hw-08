@@ -25,6 +25,14 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media screen and (max-width: $pre-tablet) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+    max-width: 768px;
+  }
 }
 
 .hero__title {
