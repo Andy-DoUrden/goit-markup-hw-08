@@ -146,16 +146,40 @@
 
           <ul class="about__list list">
             <li class="about__items">
-              <img class="img" src="./images/box_1.jpg" alt="Процес написання коду" width="370" height="294" />
+              <picture>
+                <img
+                  class="img"
+                  srcset="./images/about_1.jpg 1x, ./images/about_1@2x.jpg 2x"
+                  alt="Процес написання коду"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <h3 class="about__desc">Десктопні додатки</h3>
             </li>
 
             <li class="about__items">
-              <img class="img" src="./images/box_2.jpg" alt="Процес розробки дизайну телефону" width="370" height="294" />
+              <picture>
+                <img
+                  class="img"
+                  srcset="./images/about_2.jpg 1x, ./images/about_2@2x.jpg 2x"
+                  alt="Процес розробки дизайну сайту під телефон"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <h3 class="about__desc">Мобільні додатки</h3>
             </li>
             <li class="about__items">
-              <img class="img" src="./images/box_3.jpg" alt="Процес підбору кольорів для дизайну" width="370" height="294" />
+              <picture>
+                <img
+                  class="img"
+                  srcset="./images/about_3.jpg 1x, ./images/about_3@2x.jpg 2x"
+                  alt="Процес підбору кольорів для дизайну"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <h3 class="about__desc">Дизайнерські рішення</h3>
             </li>
           </ul>
@@ -168,13 +192,23 @@
 
           <ul class="team__list list">
             <li class="team__items">
-              <img
-                class="team__img"
-                src="./images/img_1.jpg"
-                alt="Чоловік в окулярах та бордовій сорочці"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/team_1_desktop.jpg 1x, ./images/team_1_desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/team_1_tablet.jpg 1x, ./images/team_1_tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  class="team__img"
+                  srcset="./images/team_1_mobile.jpg 1x, ./images/team_1_mobile@2x.jpg 2x"
+                  alt="Чоловік в окулярах та бордовій сорочці"
+                />
+              </picture>
               <div class="team__desc">
                 <h3 class="team__user">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -212,13 +246,23 @@
             </li>
 
             <li class="team__items">
-              <img
-                class="team__img"
-                src="./images/img_2.jpg"
-                alt="Жінка в окулярах та чорному піджаку"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/team_2_desktop.jpg 1x, ./images/team_2_desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/team_2_tablet.jpg 1x, ./images/team_2_tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  class="team__img"
+                  srcset="./images/team_2_mobile.jpg 1x, ./images/team_2_mobile@2x.jpg 2x"
+                  alt="Жінка в окулярах та чорному піджаку"
+                />
+              </picture>
               <div class="team__desc">
                 <h3 class="team__user">Ольга Рєпіна</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -256,13 +300,23 @@
             </li>
 
             <li class="team__items">
-              <img
-                class="team__img"
-                src="./images/img_3.jpg"
-                alt="Чоловік в сорочці кольору неба"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/team_3_desktop.jpg 1x, ./images/team_3_desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/team_3_tablet.jpg 1x, ./images/team_3_tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  class="team__img"
+                  srcset="./images/team_3_mobile.jpg 1x, ./images/team_3_mobile@2x.jpg 2x"
+                  alt="Чоловік в сорочці кольору неба"
+                />
+              </picture>
               <div class="team__desc">
                 <h3 class="team__user">Микола Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -300,7 +354,23 @@
             </li>
 
             <li class="team__items">
-              <img class="team__img" src="./images/img_4.jpg" alt="Чоловік в чорній футболці" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="./images/team_4_desktop.jpg 1x, ./images/team_4_desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/team_4_tablet.jpg 1x, ./images/team_4_tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  class="team__img"
+                  srcset="./images/team_4_mobile.jpg 1x, ./images/team_4_mobile@2x.jpg 2x"
+                  alt="Чоловік в чорній футболці"
+                />
+              </picture>
               <div class="team__desc">
                 <h3 class="team__user">Михайло Єрмаков</h3>
                 <p class="team__text">UI Designer</p>
